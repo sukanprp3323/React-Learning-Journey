@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Money Heist",
+    "id": "Money Heist",
+    "img_url": "http://localhost:5173/Images/Money Heist.jpg",
+    "rating": 8.1,
+    "description": "A criminal mastermind who goes by [The Professor] has a plan to pull off the biggest heist in recorded history. pls check once in a life",
+    "Type": "Crime, Love ,Thriller",
+    "watch_url": "https://www.netflix.com/in/title/80192098"
+  },
+
+  {
+    "name": "The Boys",
+    "id": "The Boys",
+    "img_url": "http://localhost:5173/Images/The Boyss.jpg",
+    "rating": 8.4,
+    "description": "The Boys is an American media franchise, consisting of action-drama/satirical black comedy superhero television",
+    "Type": "Crime, Drama, Thriller",
+    "watch_url": "https://www.amazon.com/The-Boys-Season-1/dp/B0875L45GK"
+  },
+  {
+    "name": "Jamtara",
+    "id": "Jamtara",
+    "img_url": "http://localhost:5173/Images/Jamtara.jpg",
+    "rating": 8.9,
+    "description": "Jamtara - Sabka Number Ayega stylised as Jamta₹a is an Indian crime drama television series created and directed by Soumendra.",
+    "Type": "Crime, Drama, Thriller",
+    "watch_url": "https://www.netflix.com/in/title/81183491"
+  },
+  {
+    "name": "Ashram",
+    "id": "Ashram",
+    "img_url": "http://localhost:5173/Images/Ashram.jpg",
+    "rating": 8.3,
+    "description": "Based in the fictional city of Kashipur, is an empire created by a self-proclaimed Godman - Kashipur waale Baba Nirala.",
+    "Type": "Crime, Drama, Thriller",
+    "watch_url": "https://www.mxplayer.in/show/watch-aashram-series-online-d1924002234d9096126aaee2ff997632"
+  },
+  {
+    "name": "The Family Man",
+    "id": "The Family Man",
+    "img_url": "http://localhost:5173/Images/Family man.jpg",
+    "rating": 8.8,
+    "description": "The Family Man is an edgy action-drama series, which tells the story of a middle-class man who works for a special cell of the National Investigation.",
+    "Type": "Crime,Thriller",
+    "watch_url": "https://www.amazon.com/The-Family-Man-Season-1/dp/B086HVMNT2"
+  },
+  {
+    "name": "Stranger Things",
+    "id": "Stranger Things",
+    "img_url": "http://localhost:5173/Images/Stranger Things.jpg",
+    "rating": 9.1,
+    "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments. pls check once in a life",
+    "Type": "Drama,love,Thriller",
+    "watch_url": "https://www.netflix.com/in/title/80057281"
+  },
+  {
+    "name": "Stranger Things",
+    "id": "Stranger Things",
+    "img_url": "http://localhost:5173/Images/Stranger Things.jpg",
+    "rating": 9.1,
+    "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments. pls check once in a life",
+    "Type": "Drama,love,Thriller",
+    "watch_url": "https://www.netflix.com/in/title/80057281"
+  },
+  {
+    "name": "The Family Man",
+    "id": "The Family Man",
+    "img_url": "http://localhost:5173/Images/Family man.jpg",
+    "rating": 8.8,
+    "description": "The Family Man is an edgy action-drama series, which tells the story of a middle-class man who works for a special cell of the National Investigation.",
+    "Type": "Crime,Thriller",
+    "watch_url": "https://www.amazon.com/The-Family-Man-Season-1/dp/B086HVMNT2"
+  }, {
+    "name": "Ashram",
+    "id": "Ashram",
+    "img_url": "http://localhost:5173/Images/Ashram.jpg",
+    "rating": 8.0,
+    "description": "Based in the fictional city of Kashipur, is an empire created by a self-proclaimed Godman - Kashipur waale Baba Nirala.",
+    "Type": "Crime, Drama, Thriller",
+    "watch_url": "https://www.mxplayer.in/show/watch-aashram-series-online-d1924002234d9096126aaee2ff997632"
+  }
+]

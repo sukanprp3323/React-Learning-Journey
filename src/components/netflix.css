@@ -1,0 +1,38 @@
+.rating{
+    padding: 0.3rem 1.5rem;
+    color: #000;
+    margin-left: 0.7rem;
+    border-radius: 100rem;
+    -webkit-border-radius: 100rem;
+    -moz-border-radius: 100rem;
+    -ms-border-radius: 100rem;
+    -o-border-radius: 100rem;
+}
+
+.super_hit {
+    background-color: #46f190;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.average {
+    background-color: #f7dc6f;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.btn_superHit{
+     background-color: #46f190;
+     color: #000;
+}
+
+.btn_average{
+     background-color: #f7dc6f;
+     color: #000;
+}
