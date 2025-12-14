@@ -1,0 +1,36 @@
+.g-div {
+    display: flex;
+    width: 50%;
+    height: 200px;
+    border: 2px solid blue;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.p-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
+    /* background-color: green; */
+    width: 70%;
+    height: 70%;
+    cursor: pointer;
+}
+
+.c-div {
+    background-color: aqua;
+    border: none;
+    width: 50%;
+    height: 30%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}

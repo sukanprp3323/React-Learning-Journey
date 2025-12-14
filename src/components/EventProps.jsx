@@ -1,4 +1,4 @@
-import "./EvntHandlng.Css"
+// import "./EvntHandlng.Css"
 export const EventProps = () => {
 
     const HandleWelcomeUser = (user) => {
