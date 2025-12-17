@@ -3,11 +3,13 @@
 * {
   margin: 0;
   padding: 0;
+  width: 100%;
   box-sizing: border-box;
   font-family: "urbanist", sans-serif;
 }
 html {
   font-size: 80%;
+  display: flex;
 }
 
 h1,
@@ -65,11 +67,11 @@ a {
   -o-border-radius: 3%;
 }
 
-.container {
+/* .container {
   max-width: 150rem;
   margin: 0 auto;
   padding: 3.6rem 20.4rem;
-}
+} */
 
 .grid {
   display: grid;

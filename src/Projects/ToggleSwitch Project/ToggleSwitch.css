@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "urbanist", sans-serif;
+}
+
+.toggle-switch {
+    display: flex;
+    height: 10rem;
+    width: 22rem;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    
+}

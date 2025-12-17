@@ -5,6 +5,8 @@ import { DerivedState } from "./components/DerivedState";
 import { EventPropagation } from "./components/EventPropagation";
 import { EventProps } from "./components/EventProps";
 import { State } from "./components/hooks/State";
+import { LiftStateUp } from "./components/LiftStateUp";
+import { ToggleSwitch } from "./Projects/ToggleSwitch Project/ToggleSwitch";
 // import NetflixSeries from "./components/NetflixSeries" //named Exp import
 // import "./components/Netflix.module.css"
 // import { Practices } from "./Practices";
@@ -12,11 +14,7 @@ import { State } from "./components/hooks/State";
 
 
 //* new way using React JS
-// const headerStyle = {
-//   marginBottom: "2rem",
-//   color: "darkred",
-//   fontSize: "2rem"
-// }
+
 
 export const App = () => {
   return (
@@ -25,7 +23,11 @@ export const App = () => {
       {/* <EventProps/> */}
       {/* <EventPropagation/> */}
       {/* <State/> */}
-      <DerivedState/>
+      {/* <DerivedState/> */}
+      {/* <LiftStateUp/> */}
+      <ToggleSwitch/>
+
+      
       {/* <h1 className="card-heading"
         style={headerStyle}>List of Best netflix series</h1> */}
       {/* <NetflixSeries /> */}
