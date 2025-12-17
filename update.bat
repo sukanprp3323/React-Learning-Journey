@@ -1,5 +1,6 @@
 @echo off
+set /p msg=Enter commit message: 
 git add .
-git commit -m "Daily update"
+git commit -m "%msg%"
 git push
 pause
