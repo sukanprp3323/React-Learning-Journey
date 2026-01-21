@@ -1,111 +1,84 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import "./ToDo.css"
-import { FaCheck } from "react-icons/fa6";
-import { MdDelete } from "react-icons/md";
+import { TodoForm } from "./TodoForm";
+import { ToDoList } from "./ToDoList";
+import { ToDoDate } from "./ToDoDate";
+import { getLocalStorageTodoData, setLocalStorageTodoData } from "./TodoLocalstorage";
+
+
 export const ToDO = () => {
-    const [inputValue, setInputValue] = useState(""); //* temparay Input Values
-    const [task, setTask] = useState([]); //* permenent values form inputValues
-    const [dateTime, setDateTime] = useState("")
-    const handleInputValue = (value) => {
-        setInputValue(value)
-    }
+    const [task, setTask] = useState(() => getLocalStorageTodoData()); //* permenent values form inputValues
 
-    const handleFormSubmit = (event) => {
-        event.preventDefault()
+    const handleFormSubmit = (inputValue) => {
 
-        if (!inputValue) {
+        const { id, content, checked } = inputValue;
+        // to check the input field is empty or Not
+        if (!content) {
             return;
         }
+        //To check if the data is already existing or not
+        //* if (task.includes(inputValue)) return;  for only Array
 
-        if (task.includes(inputValue)) {
-            setInputValue("")
-            return;
-        }
+        const ifTodoContentMatched = task.find((curTask) => {
+            curTask.content === content
+        });
 
-        setTask((prevTask) => [...prevTask, inputValue]) //*Updated function
+        if (ifTodoContentMatched) return;
 
-        setInputValue("")
+        setTask((prevTask) => [...prevTask, { id, content, checked }]) //*Updated function
+
     }
 
-    // console.log("hello");
+    //ToDo  LocalStorage Functionality
+   setLocalStorageTodoData(task)
 
-    //* date and Time logic  , We need a STATE For constantly changing date and time dont forgot it
-    useEffect(() => {
-        const internval = setInterval(() => {
-            const now = new Date();
-            const formattedDate = now.toLocaleDateString();
-            const formattedTime = now.toLocaleTimeString("en-IN", {
-                hour: "2-digit",
-                minute: "2-digit",
-                second: "2-digit",
-                hour12: true,
-            });
-            setDateTime(`${formattedDate} - ${formattedTime}`)
-        }, 1000)
 
-        return () => clearInterval(internval);
-    }, [])
 
-    // const updatedTime = setTimeout(formattedTime.tolo, 1000)
-
-    //*Delete ToDo logic
+    //todo Delete ToDo logic
     const handleDeleteToDo = (curTask) => {
-        console.log(task);
-        console.log(curTask);
-        const UpdatedTask = task.filter((curElem) => {   //*filter will create new Array for non matched items and we use that updatedArray [] in setTask(updatedTask)
-            return curElem !== curTask;
+        const UpdatedTask = task.filter((curElem) => {
+            //*filter will create new Array for non matched items and we use that updatedArray [] in setTask(updatedTask)
+            return curElem.content !== curTask;
         })
         setTask(UpdatedTask) //todo new non matched array inplace of ...prev
 
     }
 
-    //* Clear button functionality
+    //todo Check button functionality
 
-    // const handleClearToDoData = () => {
-    // setTask([])
-    // }
+    const handleCheckedTodo = (content) => {
+        const updatedTask = task.map((curTask) => {
+            if (curTask.content === content) {
+                return { ...curTask, checked: !curTask.checked }
+            } else {
+                return curTask;
+            }
+        })
+        setTask(updatedTask)
+    }
 
     return (
         <>
             <section className="todo-container">
                 <header className="header">
                     <h1>ToDo List</h1>
-                    <h2 className="date-time">{dateTime}</h2>
+                    <ToDoDate />
                 </header>
-                <section className="form">
-                    <form onSubmit={handleFormSubmit}>
-                        <div>
-                            <input
-                                type="text"
-                                className="todo-input"
-                                autoComplete="off"
-                                placeholder="add your Task"
-                                value={inputValue}
-                                onChange={(event) => { handleInputValue(event.target.value) }}
-                            />
-                        </div>
-                        <div>
-                            <button type="submit" className="todo-btn">
-                                Add Task
-                            </button>
-                        </div>
-                    </form>
-                </section>
+                <TodoForm onAddTodo={handleFormSubmit} />
 
                 <section className="myUnordList">
                     <ul>
                         {
-                            task.map((curTask, index) => {
+                            task.map((curTask) => {
                                 return (
-                                    <li key={index} className="todo-item" >
-                                        <span>{curTask}</span>
-                                        <button className="check-btn">
-                                            <FaCheck />
-                                        </button>
-                                        <button className="delete-btn" onClick={() => { handleDeleteToDo(curTask) }}>
-                                            <MdDelete />
-                                        </button>
-                                    </li>)
+                                    <ToDoList
+                                        key={curTask.id}
+                                        data={curTask.content}
+                                        handleDeleteToDo={handleDeleteToDo}
+                                        onhandleCheckedTodo={handleCheckedTodo}
+                                        checked={curTask.checked}
+                                    />
+                                )
                             })
                         }
                     </ul>

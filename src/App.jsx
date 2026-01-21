@@ -1,19 +1,15 @@
 
-
 //* new way using React JS
 
-import { ToDO } from "./Projects/ToDO Project/ToDo";
+import { RegistarationForm } from "./Projects/RegistrationForm/registaration";
 
-
-
-
-
-
+// import { ToDO } from "./Projects/ToDO Project/ToDo";
 
 export const App = () => {
   return (
     <section>
-          <ToDO/>
+      {/* <ToDO/> */}
+      <RegistarationForm />
     </section>
   )
 };
