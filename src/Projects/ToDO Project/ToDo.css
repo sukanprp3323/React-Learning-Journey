@@ -1,4 +1,4 @@
-
+/* 
 .todo-container {
     display: flex;
     flex-direction: column;
@@ -53,7 +53,7 @@ form {
     margin: 10px 0;
     padding: 0.2rem;
     width: 100%;
-    /* background-color: #eb4592; */
+   
 }
 
 form input {
@@ -111,7 +111,7 @@ form button {
     border-bottom-right-radius: 10px;
     min-width: 100px;
     color: var(--secondary-color);
-    /* background-color: #5dade2; */
+   
 }
 
 span {
@@ -210,4 +210,4 @@ li span {
 .clear-btn:hover{
     cursor: pointer;
     background-color: #8d1407;
-}
+} */

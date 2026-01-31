@@ -1,0 +1,135 @@
+/*! State Challange Starts Here . . .   */
+
+.state-challange-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.state-challange-container h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4rem;
+    margin-top: -3rem;
+}
+
+.innerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 400px;
+    gap: 2rem;
+    position: absolute;
+    top: 10rem;
+    background-color: rgb(226, 244, 230);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.state-challange-container .Counter-Input {
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 93%;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    font-size: 2.5rem;
+    color: rgb(32, 2, 255);
+    font-weight: 500;
+}
+
+.CounterPara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Counter-Input input {
+    font-size: 1.5rem;
+    width: 70%;
+    color: blue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.grid-three-cols {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.grid-three-cols button {
+    background-color: rgb(38, 0, 255);
+    color: rgb(227, 227, 227);
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    width: 15rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.grid-three-cols button:hover {
+    background-color: rgb(226, 244, 230);
+    border: 2px solid rgb(38, 0, 255);
+    color: rgb(38, 0, 255);
+    cursor: pointer;
+}
+
+/*! State Challange Ends Here . . .   */
+.StateHeading {
+    font-size: 3rem;
+    font-family: monospace;
+    margin-bottom: -2rem;
+}
+
+.CountValue {
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.IncrementButton {
+    letter-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    background-color: black;
+    border-top: none;
+    border-right: none;
+    cursor: pointer;
+    padding: 15px 40px 15px 40px;
+}
+
+.IncrementButton:hover {
+    border: 2px solid black;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    color: black;
+}

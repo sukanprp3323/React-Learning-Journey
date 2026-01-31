@@ -11,7 +11,7 @@ const ShortCircuitExample = () => {
 
                 {/* conditional redering using short circuit evalution */}
                 {isLoggedIn && <p className="status">You are logged IN!</p>}
-
+ 
                 {/* For USER Greeting with Name*/}
                 <p className="status"> {user ? `Hello, ${user}` : "Hello, User pls Login"}</p>
 
