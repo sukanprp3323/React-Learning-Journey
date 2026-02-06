@@ -1,0 +1,157 @@
+/*! Regstration Form starting here  */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+Html {
+    font-size: 60%;
+}
+
+:root {
+    --primary-color: #1c2833;
+    --secondary-color: #fff;
+    --bg-color: #f2f3f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+}
+
+
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+}
+
+.container {
+    padding: 20px;
+    width: 430px;
+    position: absolute;
+    left: 48%;
+    top: 25%;
+    border: 2px solid slateblue;
+    border-radius: 10px;
+    background: rgb(248, 255, 255);
+    box-shadow: 7px 10px 25px -5px;
+    transform: translate(-40%, -20%);
+    -webkit-transform: translate(-40%, -20%);
+    -moz-transform: translate(-40%, -20%);
+    -ms-transform: translate(-40%, -20%);
+    -o-transform: translate(-40%, -20%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 6px;
+    margin: 2px 0 10px 0;
+    display: inline-block;
+    border: none;
+    background: #d7eaff;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #ecfeff;
+    font-size: 1.5rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="phone"]:focus {
+    background-color: rgb(232, 232, 232);
+    outline: none;
+}
+
+button {
+    background-color: #0eb7fa;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 0.6rem;
+    color: #0eb7fa;
+}
+
+label,
+p {
+    font-size: 1.3rem;
+}
+
+p,
+span {
+    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 300px) {
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+.summary p {
+    /* display: flex; */
+    font-size: 1.6rem;
+    font-Weight: 600;
+    padding: 10px;
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.summary span {
+    font-size: 2rem;
+    margin-bottom: 0;
+}

@@ -1,28 +1,56 @@
-import "../Hooks.css"
+import { useState } from "react";
+import "../Hooks.css";
 
 export const StateChallange = () => {
-    return (<>
-        <div className="container state-challange-container">
-            <div className="innerDiv">
+  const [Count, setCount] = useState(0);
+  const [step, setSteps] = useState(0);
 
-                <h1>useState Challange</h1>
+  const IncreaseCount = () => {
+    setCount(Count + step);
+  };
 
-                <div className="Counter-Input">
-                    <p className="CounterPara">
-                        Count: <span> 0 </span>
-                    </p>
+  const DecreaseCount = () => {
+    setCount(Count - step);
+  };
 
-                    <label>
-                        Step: <input type="number" />
-                    </label>
-                </div>
+  const handleReset = (e) => {
+    setCount(0);
+    setSteps(0);
+  };
 
-                <div className="grid-three-cols">
-                    <button>Increment</button>
-                    <button>Decrement</button>
-                    <button>Reset</button>
-                </div>
-            </div>
+  return (
+    <>
+      <div className="container state-challange-container">
+        <div className="innerDiv">
+          <h1>useState Challange</h1>
+
+          <div className="Counter-Input">
+            <p className="CounterPara">
+              Count: <span> {Count} </span>
+            </p>
+
+            <label>
+              Step:{" "}
+              <input
+                type="number"
+                value={step}
+                min={0}
+                onChange={(e) => setSteps(Number(e.target.value))}
+              />
+            </label>
+          </div>
+
+          <div className="grid-three-cols">
+            <button onClick={IncreaseCount} disabled={Count >= 1000}>
+              Increment
+            </button>
+            <button onClick={DecreaseCount} disabled={Count <= 0}>
+              Decrement
+            </button>
+            <button onClick={handleReset}>Reset</button>
+          </div>
         </div>
-    </>);
+      </div>
+    </>
+  );
 };

@@ -1,17 +1,11 @@
-
 //* new way using React JS
 
-import { StateChallange } from "./components/hooks/useState/StateChallange";
-
-
-
-
+import { ContactForm } from "./components/hooks/useState/ContactForm.jsx";
 
 export const App = () => {
   return (
     <section>
-      <StateChallange/>
+      <ContactForm />
     </section>
-  )
+  );
 };
-

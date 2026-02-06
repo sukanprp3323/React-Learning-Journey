@@ -32,7 +32,7 @@
     -o-border-radius: 2rem;
 
     box-shadow:
-        0 4px 6px rgba(0, 0, 0, 0.08),
+        0 4px 6px rgba(0, 0, 0, 0.50),
         0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
@@ -133,3 +133,5 @@ span {
     background-color: white;
     color: black;
 }
+
+/*! Regstration Form starting here  */
