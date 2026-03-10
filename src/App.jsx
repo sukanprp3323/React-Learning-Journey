@@ -1,11 +1,11 @@
 //* new way using React JS
 
-import { ContactForm } from "./components/hooks/useState/ContactForm.jsx";
+import { PokemonProject } from "./components/hooks/UseEffect/PokemonProject.jsx";
 
 export const App = () => {
   return (
     <section>
-      <ContactForm />
+      <PokemonProject />
     </section>
   );
 };

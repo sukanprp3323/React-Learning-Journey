@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Urbanist", sans-serif;
+    /* font-family: "Urbanist", sans-serif; */
 }
 
 Html {
@@ -146,7 +146,7 @@ span {
     padding: 10px;
 }
 
-a{
+a {
     font-weight: bold;
     text-decoration: none;
 }
@@ -154,4 +154,80 @@ a{
 .summary span {
     font-size: 2rem;
     margin-bottom: 0;
+}
+
+
+/*? ======================== */
+
+.challange1-container {
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.challange1-container button {
+    width: 40%;
+}
+
+.challange1-container p,
+span {
+    font-size: 2rem;
+}
+
+.challange1-container input {
+    width: 70%;
+    margin-top: -10px;
+    font-size: 1.5rem;
+    background-color: #fdbbf1;
+}
+
+.challange1-container span {
+    font-size: 3rem;
+}
+
+/*? =================================  */
+
+.container-CleanUp {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Times New Roman', Times, serif;
+    background-color: #1C0770;
+    height: 729px;
+}
+
+.container-CleanUp .Counter {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #F1FF5E;
+    font-size: 3rem;
+}
+
+.Counter p {
+    font-size: 5rem;
+}
+
+.Counter .odoMeter {
+    font-size: 15rem;
+    color: #0eb7fa;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.title :not {
+    display: flex;
+    width: 200%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
 }
