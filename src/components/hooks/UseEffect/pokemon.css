@@ -32,7 +32,8 @@ h1 {
 
 p,
 span {
-    font-size: 1.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 li {
@@ -59,8 +60,8 @@ span {
 }
 
 .pokemon-card {
-    width: 20rem;
-    min-height: 42rem;
+    width: 18rem;
+    min-height: 40rem;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     background-color: #fff;
     padding: 1.6rem;
@@ -80,7 +81,7 @@ span {
     width: 100%;
     height: 40%;
     transform: rotate(180deg);
-    background-color: #ebfbf1;
+    background-color: #b1ffcf;
     border-radius: 50% 50% 100% 0%;
     z-index: 0;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -133,4 +134,13 @@ figure {
     color: #000;
     text-transform: capitalize;
     margin-top: 2.4rem;
+}
+
+.grid-three-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    align-items: end;
 }
