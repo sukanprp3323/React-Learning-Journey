@@ -1,11 +1,15 @@
 //* new way using React JS
+import "tailwindcss";
+import { ParentComponent } from "./components/PropDrilling";
 
-import { PokemonProject } from "./components/hooks/UseEffect/PokemonProject.jsx";
 
 export const App = () => {
   return (
     <section>
-      <PokemonProject />
+      <ParentComponent/>
     </section>
   );
 };
+
+
+ 

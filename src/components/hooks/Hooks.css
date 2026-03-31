@@ -1,5 +1,8 @@
-/*! State Challange Starts Here . . .   */
+/* ! State Challange Starts Here . . .  
 
+body{
+    background-color: white;
+}
 .state-challange-container {
     min-height: 100vh;
     display: flex;
@@ -104,7 +107,7 @@ span {
 }
 
 /*! State Challange Ends Here . . .   */
-.StateHeading {
+/* .StateHeading {
     font-size: 3rem;
     font-family: monospace;
     margin-bottom: -2rem;
@@ -132,6 +135,4 @@ span {
     padding: 10px 30px 10px 30px;
     background-color: white;
     color: black;
-}
-
-/*! Regstration Form starting here  */
+}  */

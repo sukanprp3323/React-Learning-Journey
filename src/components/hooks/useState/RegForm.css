@@ -1,11 +1,11 @@
-/*! Regstration Form starting here  */
+/* 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Urbanist", sans-serif; */
+    font-family: "Urbanist", sans-serif;
 }
 
 Html {
@@ -140,7 +140,7 @@ span {
 }
 
 .summary p {
-    /* display: flex; */
+    display: flex;
     font-size: 1.6rem;
     font-Weight: 600;
     padding: 10px;
@@ -157,7 +157,6 @@ a {
 }
 
 
-/*? ======================== */
 
 .challange1-container {
     position: absolute;
@@ -189,8 +188,6 @@ span {
 .challange1-container span {
     font-size: 3rem;
 }
-
-/*? =================================  */
 
 .container-CleanUp {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Times New Roman', Times, serif;
@@ -229,5 +226,5 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: #000; */
-}
+    background: #000;
+} */

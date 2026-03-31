@@ -9,7 +9,7 @@ export const RegistarationForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phonenumber, setPhoneNumber] = useState("");
-
+  
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     console.log(e.target.name);
