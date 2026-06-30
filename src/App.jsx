@@ -1,15 +1,13 @@
 //* new way using React JS
 import "tailwindcss";
-import { ParentComponent } from "./components/PropDrilling";
+import { ReactMemo } from "./components/hooks/memo/ReactMemo";
+
 
 
 export const App = () => {
   return (
-    <section>
-      <ParentComponent/>
-    </section>
+    <>
+      <ReactMemo/>
+    </>
   );
 };
-
-
- 
