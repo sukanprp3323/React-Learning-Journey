@@ -14,7 +14,6 @@ export const ReactMemo = () => {
           Increment
         </button>
       </div>
-      <Counts />
     </>
   );
 };

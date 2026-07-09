@@ -1,13 +1,13 @@
 //* new way using React JS
 import "tailwindcss";
-import { ReactMemo } from "./components/hooks/memo/ReactMemo";
+import MemoParentComponent from "./components/hooks/memo/UseMemo";
 
 
 
 export const App = () => {
   return (
     <>
-      <ReactMemo/>
+      <MemoParentComponent/>
     </>
   );
 };
